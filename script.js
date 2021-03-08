@@ -24,7 +24,6 @@ while (input !== 'quit' && input !== 'q') {
             console.log('Unknown Index !');
         }
     }
-
     input = prompt('WHAT WOULD YOU LIKE TO DO !');
 }
 console.log('Okay ! Quit the App');
