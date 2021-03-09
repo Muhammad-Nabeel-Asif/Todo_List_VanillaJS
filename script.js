@@ -1,4 +1,4 @@
-let input = prompt('WHAT WOULD YOU LIKE TO DO !');
+let input = prompt('What would you like to Do ? Choose an Option from the List Below :');
 const todos = [];
 
 while (input !== 'quit' && input !== 'q') {
@@ -13,17 +13,17 @@ while (input !== 'quit' && input !== 'q') {
     else if (input === 'new') {
         const newTodo = prompt('Okay, What is the new todo ?');
         todos.push(newTodo);
-        console.log(`'${newTodo}' added to the list`);
+        console.log(`'${newTodo}' is added to the list.`);
     }
     else if (input === 'delete') {
         const index = parseInt(prompt('Ok, Enter an Index to Delete !'));
         if (!Number.isNaN(index)) {
             const deleted = todos.splice(index, 1);
-            console.log(`Okay, You deleted '${deleted[0]}' !`);
+            console.log(`Okay, You deleted : '${deleted[0]}'.`);
         } else {
-            console.log('Unknown Index !');
+            console.log('Unknown Index, Try a Valid Index !');
         }
     }
-    input = prompt('WHAT WOULD YOU LIKE TO DO !');
+    input = prompt('What would you like to Do ? Choose an Option from the List Below :');
 }
-console.log('Okay ! Quit the App');
+console.log('Okay, You quit the App !');
